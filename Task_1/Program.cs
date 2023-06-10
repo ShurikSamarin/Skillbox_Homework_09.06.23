@@ -13,12 +13,15 @@ Random random = new Random();
                array[x, y] = random.Next(10,99);
             }
         }
+int sum = 0;
 for (int y = 0; y < height; y++)
     {
         for (int x = 0; x < width; x++)
             {
                Console.Write($"  {array[x, y]}");
+               sum = sum + array[x,y];
             }
               Console.WriteLine();
     }
+Console.WriteLine($"Sum of elements = {sum}");
 
